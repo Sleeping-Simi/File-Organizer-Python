@@ -12,6 +12,15 @@
 
     Using Tools: I used an AI partner to help me understand the structure when I got stuck, but I wrote the logic for the file counter and the multi-extension support myself.
 
+  * "DAY_2 ADDITIONS"
+
+    After getting the image move to work, I realized a real Downloads folder needs more logic. I upgraded the script to:
+    * Categorize by Type: I moved from a simple list to a Python Dictionary. Now the script handles Images, Documents, Applications, Videos, and Music.
+
+    * Multi Need Folders: The script now creates the folder only if it finds a file that belongs there.
+
+    * The break logic: Added break logic to stop the loop early once a match is found.
+
 How to run it:
 
 1. Make sure Python is installed.
