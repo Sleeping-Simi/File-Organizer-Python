@@ -43,9 +43,11 @@ for file in files:
                     logging.error(f"Error in {file} moving  as :{e}")
             break 
 if count == 0:
-    print("""Checking done✅! 
-    Your folder is already organized nothing to change! 
-    👉🏻 For more details may refer to the LOG file""")
+    summary = "Checking done! \nYour folder is already organized nothing to change! \nFor more details may refer to the LOG file"
+    logging.info(summary)
+    print(f"✅{summary}")
 else:
-    print("Checking done✅! Total number of files moved =",count)
-
+    summary = f"Checking done✅! Total number of files moved = {count}"
+    logging.info(summary)
+    print(f"✅{summary}")
+logging.info("***********Scanning Completed***********")
