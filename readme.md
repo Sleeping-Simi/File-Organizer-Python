@@ -21,6 +21,17 @@
 
     * The break logic: Added break logic to stop the loop early once a match is found.
 
+  * Day 3: Making it "Professional"
+
+      I realized that if I want to reach GSoC, my code can't just work—it has to be safe and smart.
+
+      * Error Handling: I added a "safety net." If a file is open or locked, the script doesn't crash anymore; it just skips it and moves to the next one.
+
+      * Logging: The script now keeps a "diary" (organizer_log.txt). It records exactly what happened and when, so I don't have to guess.
+
+      * Safety Checks: I added a summary at the end. It tells me exactly how many files were moved, which helps me make sure no one has messed with my logs.
+        
+
 How to run it:
 
 1. Make sure Python is installed.
