@@ -1,0 +1,29 @@
+2026-01-09 22:43:52,352 - INFO - ***********New Scanning Started***********
+2026-01-09 22:43:52,354 - INFO - Created Documents folder
+2026-01-09 22:44:25,613 - INFO - ***********New Scanning Started***********
+2026-01-09 22:45:49,953 - INFO - ***********New Scanning Started***********
+2026-01-09 22:47:46,437 - INFO - ***********New Scanning Started***********
+2026-01-09 22:48:10,604 - INFO - ***********New Scanning Started***********
+2026-01-09 22:49:30,136 - INFO - ***********New Scanning Started***********
+2026-01-09 22:53:06,221 - INFO --> ***********New Scanning Started***********
+2026-01-09 23:33:32,132 - INFO --> ***********New Scanning Started***********
+2026-01-09 23:33:32,133 - INFO --> Checking done\u2705! 
+Your folder is already organized nothing to change! 
+\U0001f449\U0001f3fb For more details may refer to the LOG file
+2026-01-09 23:35:22,230 - INFO --> ***********New Scanning Started***********
+2026-01-09 23:35:22,231 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+ For more details may refer to the LOG file
+2026-01-09 23:36:06,420 - INFO --> ***********New Scanning Started***********
+2026-01-09 23:36:06,421 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+For more details may refer to the LOG file
+2026-01-09 23:36:06,421 - INFO --> ***********Scanning Completed***********
+
+2026-01-09 23:38:17,540 - INFO --> ***********New Scanning Started***********
+2026-01-09 23:38:17,541 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+For more details may refer to the LOG file
+2026-01-09 23:38:17,541 - INFO --> ***********Scanning Completed***********
+
+
