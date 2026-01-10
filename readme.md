@@ -30,12 +30,21 @@
       * Logging: The script now keeps a "diary" (organizer_log.txt). It records exactly what happened and when, so I don't have to guess.
 
       * Safety Checks: I added a summary at the end. It tells me exactly how many files were moved, which helps me make sure no one has messed with my logs.
-        
+  * Day 4: Architectural Changes (Modularization & Config)
 
+    Today it became quite easy to go with the flow and from "basic scripts" I started building a real system with help of AI.
+
+    * Modularization: I broke my code into specialized "tools" (functions). One for logging, one for folder creation, and one for loading data. This makes the code cleaner and easier to fix.
+
+    * External Configuration (JSON): I separated the Logic from the Data. Instead of having folder names inside my code, I moved them to a config.json file.
+
+    -> Why: Now, I can change which files get organized without ever touching the Python code. 
 How to run it:
 
 1. Make sure Python is installed.
 
-2. Change the path variable to your own Downloads folder.
+2. Keep organizer.py and config.json in the same folder.
+
+3. Change the path variable to your own Downloads folder.
 
 3. Run python organizer.py
