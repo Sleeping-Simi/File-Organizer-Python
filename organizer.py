@@ -1,6 +1,7 @@
 import os 
 import shutil
 import logging
+import json
 
 def logging_setup():
      logging.basicConfig(
@@ -13,17 +14,20 @@ def create_folder(folder, folder_paths):
     if not os.path.exists(folder_paths):
         os.makedirs(folder_paths)
         logging.info(f"Created {folder} folder")
-    
+
+def load_config():
+    try:
+        with open ("config.json","r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        logging.error("Config file not found!")
+        return {}
+
 path =r"C:\Users\SOVANGI\Downloads"
-folders={
-    "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp"],
-    "Documents": [".pdf", ".docx", ".doc", ".txt", ".xlsx"],
-    "Applications": [".exe", ".msi"],
-    "Videos": [".mp4", ".mkv", ".mov"],
-    "Music":[".mp3"]
-}
 
 logging_setup()
+
+folders= load_config()
  
 logging.info("***********New Scanning Started***********")
 
@@ -53,7 +57,7 @@ if count == 0:
     
 else:
     summary = f"Checking done✅! Total number of files moved = {count}"
-    
+
 logging.info(summary)
 print(f"✅{summary}")
 logging.info("***********Scanning Completed***********")

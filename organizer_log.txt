@@ -27,3 +27,8 @@ For more details may refer to the LOG file
 2026-01-09 23:38:17,541 - INFO --> ***********Scanning Completed***********
 
 
+2026-01-10 21:41:30,004 - INFO --> ***********New Scanning Started***********
+2026-01-10 21:41:30,009 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+For more details may refer to the LOG file
+2026-01-10 21:41:30,010 - INFO --> ***********Scanning Completed***********
