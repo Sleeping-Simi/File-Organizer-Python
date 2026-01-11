@@ -39,12 +39,25 @@
     * External Configuration (JSON): I separated the Logic from the Data. Instead of having folder names inside my code, I moved them to a config.json file.
 
     -> Why: Now, I can change which files get organized without ever touching the Python code. 
+
+  *  Day 5: Universal Portability & Interactive Recovery:
+
+        Today, I made my script "smart" enough to work on any computer without editing the Python code itself.
+
+       * Configurable Paths: I moved the target_path into config.json. This means if I give this script to a friend, they don't have to be a coder to use it; they just paste their path into the JSON file.
+
+        * Custom Validator Function: I created my own function to check if paths exist. This follows the DRY (Don't Repeat Yourself) principle, making the code much cleaner.
+
+       * Interactive Path Recovery: If the path in the JSON is wrong, the script doesn't just exit. It prompts the user to paste the path manually.
+
+      
+
 How to run it:
 
 1. Make sure Python is installed.
 
 2. Keep organizer.py and config.json in the same folder.
 
-3. Change the path variable to your own Downloads folder.
+3. Change the path variable to your own Downloads folder .
 
 3. Run python organizer.py
