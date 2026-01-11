@@ -10,6 +10,8 @@ def logging_setup():
         format='%(asctime)s - %(levelname)s --> %(message)s'
     )
 
+logging_setup()
+
 def create_folder(folder, folder_paths):
     if not os.path.exists(folder_paths):
         os.makedirs(folder_paths)
@@ -23,8 +25,14 @@ def load_config():
         logging.error("Config file not found!")
         return {}
 
-
-logging_setup()
+def if_path_exists(target_path, purpose="directory"):
+    if os.path.exists(target_path):
+        return True
+    else:
+        logging.error(f"Missing {purpose}: {target_path}")
+        print(f"Error ❌⚠️: The specified path does not exist: {target_path}")  
+        return False
+    
 
 config= load_config()
  
@@ -33,10 +41,13 @@ logging.info("***********New Scanning Started***********")
 folders=config.get("folders",{})
 path=config.get("target_path","")
 
-if not os.path.exists(path):
-    logging.error(f"The specified path does not exist: {path}")
-    print(f"Error ❌⚠️: The specified path does not exist: {path}")
-    exit()
+if not if_path_exists(path, "default target directory"):
+    new_path=input("Please enter a valid path to organize files: ")
+    new_path=new_path.strip('"')
+    path=new_path
+    if not if_path_exists(path, f"{path}"):
+        print("Error ❌⚠️: Your provided path is still invalid. Exiting the program.")
+        exit()
 files=os.listdir(path)
 count=0
 for file in files:

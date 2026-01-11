@@ -55,3 +55,8 @@ For more details may refer to the LOG file
 Your folder is already organized nothing to change! 
 For more details may refer to the LOG file
 2026-01-11 15:47:20,149 - INFO --> ***********Scanning Completed***********
+2026-01-11 17:32:47,256 - INFO --> ***********New Scanning Started***********
+2026-01-11 17:32:47,257 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+For more details may refer to the LOG file
+2026-01-11 17:32:47,257 - INFO --> ***********Scanning Completed***********
