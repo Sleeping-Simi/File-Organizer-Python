@@ -23,14 +23,20 @@ def load_config():
         logging.error("Config file not found!")
         return {}
 
-path =r"C:\Users\SOVANGI\Downloads"
 
 logging_setup()
 
-folders= load_config()
+config= load_config()
  
 logging.info("***********New Scanning Started***********")
 
+folders=config.get("folders",{})
+path=config.get("target_path","")
+
+if not os.path.exists(path):
+    logging.error(f"The specified path does not exist: {path}")
+    print(f"Error ❌⚠️: The specified path does not exist: {path}")
+    exit()
 files=os.listdir(path)
 count=0
 for file in files:
