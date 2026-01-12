@@ -50,7 +50,13 @@
 
        * Interactive Path Recovery: If the path in the JSON is wrong, the script doesn't just exit. It prompts the user to paste the path manually.
 
-      
+  * Day 6: Refactoring & Safety Systems (Dry Run Mode)
+
+    Today I focused on making the script look like professional software. It’s no longer just a script; it’s a structured "System."
+    * The Main Entry Point: I wrapped my code in a `def main():` function and used the `if __name__ == "__main__":` guard. This keeps the script professional and reusable as a module.
+    * Dry Run Mode: I added a "Safety Switch." If I set `dry_run: true` in my JSON, the script only tells me what it would do without moving anything. This prevents accidentally running it and messing up my files.
+    * Advanced Filtering: I used a **List Comprehension** to filter the directory. Now the script automatically ignores sub-folders using `os.path.isfile` and only looks for actual files.
+    * Path Normalization: I used `os.path.normpath` to handle slash issues, making the script work perfectly regardless of how the user types the path.  
 
 How to run it:
 

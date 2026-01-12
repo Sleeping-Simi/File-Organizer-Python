@@ -60,3 +60,24 @@ For more details may refer to the LOG file
 Your folder is already organized nothing to change! 
 For more details may refer to the LOG file
 2026-01-11 17:32:47,257 - INFO --> ***********Scanning Completed***********
+2026-01-12 15:58:20,541 - INFO --> ***********New Scanning Started***********
+2026-01-12 15:58:20,547 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+For more details may refer to the LOG file
+2026-01-12 15:58:20,548 - INFO --> ***********Scanning Completed***********
+2026-01-12 17:00:44,828 - INFO --> ***********New Scanning Started***********
+2026-01-12 17:00:44,830 - INFO --> Checking done\u2705! Total number of files moved = 1
+2026-01-12 17:00:44,831 - INFO --> ***********Scanning Completed***********
+2026-01-12 17:10:45,559 - INFO --> ***********New Scanning Started***********
+2026-01-12 17:10:45,560 - ERROR --> Missing default target directory: 
+2026-01-12 17:57:12,605 - INFO --> ***********New Scanning Started***********
+2026-01-12 17:57:12,606 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+For more details may refer to the LOG file
+2026-01-12 17:57:12,606 - INFO --> ***********Scanning Completed***********
+2026-01-12 18:08:07,249 - INFO --> ***********New Scanning Started***********
+2026-01-12 18:08:07,250 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-12 18:08:07,250 - INFO --> ***********Scanning Completed***********
+2026-01-12 18:25:21,039 - INFO --> ***********New Scanning Started***********
+2026-01-12 18:25:21,047 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-12 18:25:21,047 - INFO --> ***********Scanning Completed***********
