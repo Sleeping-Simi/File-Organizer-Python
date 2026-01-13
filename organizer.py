@@ -3,6 +3,11 @@ import shutil
 import logging
 import json
 
+GREEN = "\033[92m"
+RED = "\033[91m"
+YELLOW = "\033[93m"
+RESET = "\033[0m"
+
 def logging_setup():
      logging.basicConfig(
         filename="organizer_log.txt", 
@@ -21,16 +26,21 @@ def load_config():
     try:
         with open ("config.json","r") as f:
             return json.load(f)
+    except json.JSONDecodeError:
+        logging.error("Error decoding JSON from config file!")
+        print(f"{RED}Error ❌⚠️: Configuration file has invalid format.{RESET}")
+        print(f"{YELLOW}Hint:{RESET} Check for missing commas or brackets in config.json.")
+        exit()
     except FileNotFoundError:
         logging.error("Config file not found!")
-        return {}
+        exit()
 
 def if_path_exists(target_path, purpose="directory"):
     if os.path.exists(target_path):
         return True
     else:
         logging.error(f"Missing {purpose}: {target_path}")
-        print(f"Error ❌⚠️: The specified path does not exist: {target_path}")  
+        print(f" {RED}Error ❌⚠️: The specified path does not exist: {target_path}")  
         return False
     
 
@@ -44,12 +54,17 @@ def main():
     path=os.path.normpath(path)
 
     if not if_path_exists(path, "default target directory"):
-        new_path=input("Please enter a valid path to organize files: ")
-        new_path=new_path.strip('"')
-        path=new_path
-        if not if_path_exists(path, f"{path}"):
-            print("Error ❌⚠️: Your provided path is still invalid. Exiting the program.")
-            exit()
+        while True:
+            new_path = input(f"{YELLOW}Please enter a valid path to organize: {RESET}").strip('"').strip()
+            if not new_path:
+                print(f"{RED}The path can not be emptied..{RESET} Try again!")
+                continue
+            new_path=os.path.normpath(new_path)
+            path=new_path
+            if not if_path_exists(path, f"{path}"):
+                print(f"{RED}Error ❌⚠️: Your provided path is still invalid.{RESET} Try again!")
+            else:
+                break
     
     files=[f for f in os.listdir(path) if os.path.isfile(os.path.join(path,f))]
     count=0
@@ -68,15 +83,16 @@ def main():
                     logging.warning(f"Skipped: {file} (file already exists in {folder} folder)")
                 else: 
                     if is_dry_run:
-                        print(f"Dry run: Moving: {file} to {folder} folder")
+                        print(f"{YELLOW}🔍 [DRY RUN]:{RESET} Would move {file}")
                         logging.info(f"Dry Run: Moved: {file} to {folder} folder")
                         dry_count+=1
                     else:
                         try:
                             shutil.move(original_file_path,new_file_path)
-                            print(f"Moved: {filename} to {folder} folder")
+                            print(f"{GREEN}✅ Moved:{RESET} {file} to {folder}")
                             count+=1
                         except Exception as e:
+                            print(f"{RED}❌ Error:{RESET} {e}")
                             logging.error(f"Error in {file} moving  as :{e}")
                 break 
     if is_dry_run:
@@ -87,7 +103,7 @@ def main():
         summary = f"Checking done✅! Total number of files moved = {count}"
 
     logging.info(summary)
-    print(f"✅{summary}")
+    print(f"{GREEN}✅ {summary}")
     logging.info("***********Scanning Completed***********")
 
 if __name__ == "__main__":

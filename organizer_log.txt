@@ -81,3 +81,68 @@ For more details may refer to the LOG file
 2026-01-12 18:25:21,039 - INFO --> ***********New Scanning Started***********
 2026-01-12 18:25:21,047 - INFO --> Dry run completed! Total number of files that would be moved = 0
 2026-01-12 18:25:21,047 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:44:02,632 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:44:02,651 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-13 13:44:02,653 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:44:31,460 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:44:31,461 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-13 13:44:31,462 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:44:43,855 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:44:43,856 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-13 13:44:43,857 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:47:31,096 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:47:31,099 - INFO --> Created Documents folder
+2026-01-13 13:47:31,100 - INFO --> Dry Run: Moved: DAAandDS.pdf to Documents folder
+2026-01-13 13:47:31,101 - INFO --> Dry Run: Moved: GATE CS Free Resourcs - Anjali (AIR13).pdf to Documents folder
+2026-01-13 13:47:31,102 - INFO --> Dry Run: Moved: ScreenRec_webinstall_all.exe to Applications folder
+2026-01-13 13:47:31,102 - INFO --> Dry Run: Moved: VSCodeUserSetup-x64-1.104.3.exe to Applications folder
+2026-01-13 13:47:31,103 - INFO --> Dry Run: Moved: WarpSetup.exe to Applications folder
+2026-01-13 13:47:31,103 - INFO --> Dry run completed! Total number of files that would be moved = 5
+2026-01-13 13:47:31,103 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:49:10,074 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:49:10,075 - INFO --> Dry Run: Moved: DAAandDS.pdf to Documents folder
+2026-01-13 13:49:10,076 - INFO --> Dry Run: Moved: GATE CS Free Resourcs - Anjali (AIR13).pdf to Documents folder
+2026-01-13 13:49:10,076 - INFO --> Dry Run: Moved: ScreenRec_webinstall_all.exe to Applications folder
+2026-01-13 13:49:10,077 - INFO --> Dry Run: Moved: VSCodeUserSetup-x64-1.104.3.exe to Applications folder
+2026-01-13 13:49:10,077 - INFO --> Dry Run: Moved: WarpSetup.exe to Applications folder
+2026-01-13 13:49:10,078 - INFO --> Dry run completed! Total number of files that would be moved = 5
+2026-01-13 13:49:10,078 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:50:12,395 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:50:12,396 - INFO --> Dry Run: Moved: DAAandDS.pdf to Documents folder
+2026-01-13 13:50:12,397 - INFO --> Dry Run: Moved: GATE CS Free Resourcs - Anjali (AIR13).pdf to Documents folder
+2026-01-13 13:50:12,398 - INFO --> Dry Run: Moved: ScreenRec_webinstall_all.exe to Applications folder
+2026-01-13 13:50:12,398 - INFO --> Dry Run: Moved: VSCodeUserSetup-x64-1.104.3.exe to Applications folder
+2026-01-13 13:50:12,399 - INFO --> Dry Run: Moved: WarpSetup.exe to Applications folder
+2026-01-13 13:50:12,399 - INFO --> Dry run completed! Total number of files that would be moved = 5
+2026-01-13 13:50:12,399 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:51:42,596 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:51:42,598 - INFO --> Dry Run: Moved: DAAandDS.pdf to Documents folder
+2026-01-13 13:51:42,599 - INFO --> Dry Run: Moved: GATE CS Free Resourcs - Anjali (AIR13).pdf to Documents folder
+2026-01-13 13:51:42,600 - INFO --> Dry Run: Moved: ScreenRec_webinstall_all.exe to Applications folder
+2026-01-13 13:51:42,600 - INFO --> Dry Run: Moved: VSCodeUserSetup-x64-1.104.3.exe to Applications folder
+2026-01-13 13:51:42,601 - INFO --> Dry Run: Moved: WarpSetup.exe to Applications folder
+2026-01-13 13:51:42,601 - INFO --> Dry run completed! Total number of files that would be moved = 5
+2026-01-13 13:51:42,603 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:54:45,211 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:54:45,217 - INFO --> Checking done\u2705! Total number of files moved = 5
+2026-01-13 13:54:45,220 - INFO --> ***********Scanning Completed***********
+2026-01-13 13:55:34,742 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:55:34,743 - ERROR --> Missing default target directory: C:\Users\SOVANGI\Downoads
+2026-01-13 13:56:04,363 - INFO --> ***********New Scanning Started***********
+2026-01-13 13:56:04,364 - ERROR --> Missing default target directory: C:\Users\SOVANGI\Downoads
+2026-01-13 13:56:11,454 - ERROR --> Missing C:\Users\SOVANGI\Do: C:\Users\SOVANGI\Do
+2026-01-13 13:56:33,997 - INFO --> Checking done! 
+Your folder is already organized nothing to change! 
+For more details may refer to the LOG file
+2026-01-13 13:56:33,998 - INFO --> ***********Scanning Completed***********
+2026-01-13 14:36:43,949 - ERROR --> Error decoding JSON from config file!
+2026-01-13 14:36:43,950 - INFO --> ***********New Scanning Started***********
+2026-01-13 14:36:43,951 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-13 14:36:43,951 - INFO --> ***********Scanning Completed***********
+2026-01-13 14:38:39,945 - ERROR --> Error decoding JSON from config file!
+2026-01-13 15:11:50,598 - INFO --> ***********New Scanning Started***********
+2026-01-13 15:11:50,604 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-13 15:11:50,604 - INFO --> ***********Scanning Completed***********
+2026-01-13 15:12:05,992 - INFO --> ***********New Scanning Started***********
+2026-01-13 15:12:05,993 - INFO --> Dry run completed! Total number of files that would be moved = 0
+2026-01-13 15:12:05,993 - INFO --> ***********Scanning Completed***********
