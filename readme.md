@@ -58,6 +58,20 @@
     * Advanced Filtering: I used a **List Comprehension** to filter the directory. Now the script automatically ignores sub-folders using `os.path.isfile` and only looks for actual files.
     * Path Normalization: I used `os.path.normpath` to handle slash issues, making the script work perfectly regardless of how the user types the path.  
 
+  * Day 7: The Grand Finale (UX & UI Polish)
+
+    Today I turned my script into a professional "v1.0" tool by focusing on the User Experience (UX) and making the system "bulletproof" against errors.
+
+    * ANSI Terminal Colors: I added color constants (GREEN, RED, YELLOW) to the output. Now, success messages look professional in green, and errors pop in red. This makes the script much easier to read at a glance.
+
+    * Persistent Path Recovery: Instead of the script just quitting if the path is wrong, I implemented a while True loop. The script now patiently asks the user to try again if the input is empty or invalid.
+
+    * Robust JSON Error Handling: I upgraded the load_config function with a specific except json.JSONDecodeError block.
+
+    * The "Final Boss" Bug: I learned that JSON is very picky about commas and data types (e.g., false vs "False").
+
+    * Input Sanitization: I ensured that even manually entered paths are stripped of quotes and normalized using os.path.normpath so the script is bulletproof against copy-paste errors from Windows.
+
 How to run it:
 
 1. Make sure Python is installed.
