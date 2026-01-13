@@ -1,7 +1,7 @@
 {  
     "settings" :{
         "target_path": "C:/Users/SOVANGI/Downloads",
-        "dry_path": "True"
+        "dry_run": true
     },
     "folders":{
         "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp"],
