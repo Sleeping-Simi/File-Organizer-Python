@@ -2,27 +2,49 @@ import os
 import shutil
 import logging
 import json
+import typing
 
 GREEN = "\033[92m"
 RED = "\033[91m"
 YELLOW = "\033[93m"
 RESET = "\033[0m"
 
-def logging_setup():
-     logging.basicConfig(
-        filename="organizer_log.txt", 
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s --> %(message)s'
-    )
+def logging_setup()-> None:
+    """
+    Docstring for logging_setup
+    args: None
+    return: None
+    It sets up logging configuration to log messages to a file named 'organizer_log.txt'
+    """
+    logging.basicConfig(
+    filename="organizer_log.txt", 
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s --> %(message)s'
+)
 
 logging_setup()
 
-def create_folder(folder, folder_paths):
+def create_folder(folder: str, folder_paths: str) -> None:
+    """
+    Docstring for create_folder
+    args: folder (str): name of the folder to be created
+    folder_paths (str): path where the folder is to be created
+    return: None
+    It creates a folder at the specified path if it does not already exist
+    """
     if not os.path.exists(folder_paths):
         os.makedirs(folder_paths)
         logging.info(f"Created {folder} folder")
 
-def load_config():
+def load_config() -> dict:
+    """
+    Docstring for load_config
+    args: None
+    return: dict
+    It takes data config.json file also known as JSON data.
+    If any errors occurs it terminates the file by printing error msgs
+
+     """
     try:
         with open ("config.json","r") as f:
             return json.load(f)
@@ -35,7 +57,15 @@ def load_config():
         logging.error("Config file not found!")
         exit()
 
-def if_path_exists(target_path, purpose="directory"):
+def if_path_exists(target_path: str, purpose:str="directory") -> bool:
+
+    """
+    Docstring for if_path_exists
+    args: target_path (str): path of the folder to be checked
+    purpose (str): purpose of the folder to be checked
+    return: bool
+    it checks whether the provied path of the folder is valid or not
+    """
     if os.path.exists(target_path):
         return True
     else:
